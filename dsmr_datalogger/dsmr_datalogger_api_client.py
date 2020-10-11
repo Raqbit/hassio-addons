@@ -153,7 +153,6 @@ def main():  # noqa: C901
         if DATALOGGER_SLEEP >= DATALOGGER_MIN_SLEEP_FOR_RECONNECT:
             datasource = None
 
-        logger.info('[%s] Telegram read', datetime.datetime.now())
         logger.debug("[%s] Telegram read:\n%s", datetime.datetime.now(), telegram)
 
         for current_server_index in range(len(DATALOGGER_API_HOSTS)):
